@@ -32,7 +32,7 @@ angular.module('homepageApp')
   		thingsIKnow: [
   			{
   				altText: 'AngularJS',
-  				src: '',
+  				src: 'angular-js.png',
   				text: '+ denne siden er skrevet i ES6 med polyfills for eldre browsers'
   			},
   			{
@@ -42,7 +42,7 @@ angular.module('homepageApp')
   			},
   			{
   				altText: 'Bootstrap',
-  				src: '',
+  				src: 'bootstrap-logo.png',
   				text: ''
   			},
   		]
