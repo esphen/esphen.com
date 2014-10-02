@@ -9,7 +9,7 @@
  * route change.
  */
 angular.module('homepageApp')
-.controller('RootCtrl', ['$rootScope', '$location', 'Page', function ($rootScope, $location, Page) {
+.controller('RootCtrl', ['$rootScope', '$location', 'Page', ($rootScope, $location, Page) => {
 	$rootScope.page = Page;
 
 	$rootScope.$on('$routeChangeSuccess', () => {
