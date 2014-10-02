@@ -1,0 +1,16 @@
+<article>
+	<h1 class="text-center">Mine kunnskaper</h1>
+
+	<table class="table">
+		<tbody>
+			<tr data-ng-repeat="thing in page.thingsIKnow">
+				<td>
+					<img data-ng-src="images/tech/{{thing.src}}" alt="{{thing.altText}}" />
+				</td>
+				<td>
+					<p data-ng-bind="thing.text"></p>
+				</td>
+			</tr>
+		</tbody>
+	</table>
+</article>
