@@ -14,7 +14,7 @@ angular.module('homepageApp')
  		scope: {
  			scroll: '=scrollPosition'
  		},
- 		link: function postLink(scope, element) {
+ 		link: (scope, element) => {
  			var windowEl = angular.element($window);
 			var handler = () => {
 			  scope.scroll = windowEl.scrollTop();
