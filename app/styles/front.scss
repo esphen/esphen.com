@@ -63,8 +63,8 @@
 	}
 
 	.bounce:hover {
-		-webkit-animation: 1s ease 0s normal both infinite bounce;
-		   -moz-animation: 1s ease 0s normal both infinite bounce;
-				animation: 1s ease 0s normal both infinite bounce;
+		-webkit-animation: 1s ease-out 0s normal both infinite bounce;
+		   -moz-animation: 1s ease-out 0s normal both infinite bounce;
+				animation: 1s ease-out 0s normal both infinite bounce;
 	}
 }
