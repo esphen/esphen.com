@@ -13,6 +13,9 @@
 	  	-webkit-transition: .5s ease-out all;
 	  	   -moz-transition: .5s ease-out all;
 	  			transition: .5s ease-out all;
+	  	-webkit-animation: 1s ease-out 1s normal both 1 bounce;
+   		   -moz-animation: 1s ease-out 1s normal both 1 bounce;
+				animation: 1s ease-out 1s normal both 1 bounce;
 
  		position: absolute;
     	top: 100px;
@@ -44,6 +47,12 @@
 	  		top: 50px;
 	  		font-size: 2em;
 	  	}
+
+	  	&:hover {
+			-webkit-animation-iteration-count: infinite;
+   			   -moz-animation-iteration-count: infinite;
+					animation-iteration-count: infinite;
+	  	}
 	}
 
 	#content {
@@ -63,8 +72,8 @@
 	}
 
 	.bounce:hover {
-		-webkit-animation: 1s ease-out 0s normal both infinite bounce;
-		   -moz-animation: 1s ease-out 0s normal both infinite bounce;
-				animation: 1s ease-out 0s normal both infinite bounce;
+
+
+
 	}
 }
