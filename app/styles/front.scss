@@ -1,0 +1,70 @@
+@import 'animations.scss';
+#front {
+	body {
+		background-color: black;
+	}
+
+	a {
+		outline: 0;
+		color: black;
+	}
+
+	#jumbo {
+	  	-webkit-transition: .5s ease-out all;
+	  	   -moz-transition: .5s ease-out all;
+	  			transition: .5s ease-out all;
+
+ 		position: absolute;
+    	top: 100px;
+	    width: 700px;
+	    left: 50%;
+
+	  	margin-top: -15px;
+	    margin-left: -350px;
+
+	  	background-color: rgba(255,255,255,0.8);
+	  	border-radius: 0;
+	  	opacity: 0;
+
+	  	&.slide-in {
+			opacity: 1;
+			margin-top: 0;
+	  	}
+
+	  	h2 {
+	  		font-size: 3em;
+	  	}
+
+	  	h3 {
+	  		font-size: 1.3em;
+	  		font-weight: 300;
+	  	}
+
+	  	.glyphicon-chevron-down {
+	  		top: 50px;
+	  		font-size: 2em;
+	  	}
+	}
+
+	#content {
+		position: absolute;
+		top: 800px;
+		left: 0;
+		width: 100%;
+
+		background-color: #1d2634;
+		height: 100%;
+
+		color: white;
+
+		h1,h2,h3 {
+			text-align: center;
+		}
+	}
+
+	.bounce:hover {
+		-webkit-animation: 1s ease 0s normal both infinite bounce;
+		   -moz-animation: 1s ease 0s normal both infinite bounce;
+				animation: 1s ease 0s normal both infinite bounce;
+	}
+}
