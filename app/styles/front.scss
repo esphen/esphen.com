@@ -49,12 +49,9 @@
 	  	}
 
 	  	&:hover {
-			-webkit-animation-iteration-count: infinite;
-   			   -moz-animation-iteration-count: infinite;
-					animation-iteration-count: infinite;
-			-webkit-animation-delay: -0.23s;
-   			   -moz-animation-delay: -0.23s;
-					animation-delay: -0.23s;
+	  		-webkit-animation: 1s ease-out 0s normal both infinite bounce-hover;
+   			   -moz-animation: 1s ease-out 0s normal both infinite bounce-hover;
+					animation: 1s ease-out 0s normal both infinite bounce-hover;
 	  	}
 	}
 
@@ -72,11 +69,5 @@
 		h1,h2,h3 {
 			text-align: center;
 		}
-	}
-
-	.bounce:hover {
-
-
-
 	}
 }

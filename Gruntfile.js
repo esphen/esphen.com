@@ -14,6 +14,7 @@ module.exports = function (grunt) {
 
   // Time how long tasks take. Can help when optimizing build times
   require('time-grunt')(grunt);
+  grunt.loadNpmTasks('grunt-traceur-simple');
 
   // Configurable paths for the application
   var appConfig = {
@@ -35,7 +36,7 @@ module.exports = function (grunt) {
       },
       js: {
         files: ['<%= yeoman.app %>/scripts/{,*/}*.js'],
-        tasks: ['newer:jshint:all'],
+        tasks: ['newer:jshint:all', 'traceur'],
         options: {
           livereload: '<%= connect.options.livereload %>'
         }
@@ -61,6 +62,21 @@ module.exports = function (grunt) {
           '<%= yeoman.app %>/images/{,*/}*.{png,jpg,jpeg,gif,webp,svg}'
         ]
       }
+    },
+
+    // Compile ES6 to ES5
+    traceur: {
+      options: {
+        traceurOptions: '--experimental --sourcemap'
+      },
+      custom: {
+        files: [{
+          expand: true,
+          cwd: '<%= yeoman.app %>/scripts',
+          src: ['services/{,*/}*.js', 'directives/**.js', 'controllers/**.js', '*.js'],
+          dest: '<%= yeoman.app %>/scripts/es5'
+        }]
+      },
     },
 
     // The actual grunt server settings
@@ -114,12 +130,14 @@ module.exports = function (grunt) {
     jshint: {
       options: {
         jshintrc: '.jshintrc',
-        reporter: require('jshint-stylish')
+        reporter: require('jshint-stylish'),
+        esnext: true
       },
       all: {
         src: [
           'Gruntfile.js',
-          '<%= yeoman.app %>/scripts/{,*/}*.js'
+          '<%= yeoman.app %>/scripts/{,*/}*.js',
+          '!<%= yeoman.app %>/scripts/es5/{,*/}*.js'
         ]
       },
       test: {
@@ -399,6 +417,7 @@ module.exports = function (grunt) {
       'wiredep',
       'concurrent:server',
       'autoprefixer',
+      'traceur',
       'connect:livereload',
       'watch'
     ]);

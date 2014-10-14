@@ -63,22 +63,22 @@
         <script src="bower_components/angular-animate/angular-animate.js"></script>
         <script src="bower_components/angular-touch/angular-touch.js"></script>
         <script src="bower_components/angular-route/angular-route.js"></script>
-        <script src="bower_components/es6-shim/es6-shim.js"></script>
         <script src="bower_components/angular-scroll/angular-scroll.min.js"></script>
         <!-- endbower -->
+        <script src="bower_components/traceur-runtime/traceur-runtime.js"></script>
         <!-- endbuild -->
 
         <!-- build:js({.tmp,app}) scripts/scripts.js -->
-        <script src="scripts/app.js"></script>
+        <script src="scripts/es5/app.js"></script>
 
         <!-- Services -->
-        <script src="scripts/services/constants/page.js"></script>
+        <script src="scripts/es5/services/constants/page.js"></script>
         <!-- Directives  -->
-        <script src="scripts/directives/scrollposition.js"></script>
+        <script src="scripts/es5/directives/scrollposition.js"></script>
         <!-- Controllers -->
-        <script src="scripts/root.js"></script>
-        <script src="scripts/controllers/front.js"></script>
-        <script src="scripts/controllers/about.js"></script>
+        <script src="scripts/es5/root.js"></script>
+        <script src="scripts/es5/controllers/front.js"></script>
+        <script src="scripts/es5/controllers/about.js"></script>
         <!-- endbuild -->
     </body>
 </html>
