@@ -12,9 +12,9 @@
 		<div class="collapse navbar-collapse" id="header-collapse">
 			<ul class="nav navbar-nav">
 				<li data-ng-class="{'active': tab.id === $root.activeTab}"
-					data-ng-repeat="tab in page.header.tabs">
-					<a data-ng-href="{{tab.href}}">
-						<span class="link">{{tab.name}}</span>
+					data-ng-repeat="tab in ::page.header.tabs">
+					<a data-ng-href="{{::tab.href}}">
+						<span class="link">{{::tab.name}}</span>
 					</a>
 				</li>
 			</ul>

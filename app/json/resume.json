@@ -1,0 +1,76 @@
+{
+  "basics": {
+    "name": "Espen Henriksen",
+    "label": "Webitvikler",
+    "picture": "",
+    "email": "espen.henriksen@me.com",
+    "phone": "91914087",
+    "website": "http://www.esphen.com",
+    "summary": "Fast learning web developer with a diverse skillset",
+    "location": {
+      "address": "Deichmans gate 6B",
+      "postalCode": "0178",
+      "city": "Oslo",
+      "countryCode": "NOR"
+    },
+    "profiles": [{
+      "network": "LinkedIn",
+      "username": "",
+      "url": "http://no.linkedin.com/pub/espen-henriksen/87/66a/342/"
+    }]
+  },
+  "work": [{
+    "company": "Oslo Market Solutions",
+    "position": "Web Developer",
+    "website": "http://oslomarketsolutions.no/",
+    "startDate": "4-2014",
+    "endDate": null,
+    "summary": "",
+    "highlights": []
+  }],
+  "volunteer": [{
+    "organization": "Bluebox",
+    "position": "Audio technician",
+    "website": "http://www.bluebox.no/",
+    "startDate": "8-2013",
+    "endDate": "8-2014",
+    "summary": "Responsible for quality audio during events, concerts, et cetera. Also responsible for proper maintenance and handling of technical equipment.",
+    "highlights": []
+  }],
+  "education": [{
+    "institution": "Universitetet i Agder",
+    "area": "Multimedia technology and -design",
+    "studyType": "IT",
+    "startDate": "2011",
+    "endDate": "2014",
+    "gpa": "B",
+    "courses": [
+      ""
+    ]
+  }],
+  "awards": [{
+    "title": "Certification: AngularJS End-To-End development",
+    "date": "05-2014",
+    "awarder": "ProgramUtvikling AS",
+    "summary": ""
+  }],
+  "skills": [{
+    "name": "AngularJS",
+    "level": "Good",
+    "keywords": []
+  }],
+  "languages": [{
+    "language": "Norwegian",
+    "fluency": "Native"
+  },
+  {
+    "language": "English",
+    "fluency": "Native"
+  }],
+  "interests": [{
+    "name": "",
+    "keywords": [
+      ""
+    ]
+  }]
+}
