@@ -29,6 +29,11 @@ angular.module('homepageApp')
   				}
   			]
   		},
+      front: {
+        introduction: {
+          text: 'My name is Espen, and I\'m a web developer'
+        }
+      },
   		thingsIKnow: [
   			{
   				altText: 'AngularJS',
