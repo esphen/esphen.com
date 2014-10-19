@@ -15,6 +15,10 @@
 @keyframes bounce {
 	@include bounce-keyframes();
 }
+/* Workaround for chrome and friends
+*  Two animations with different names enable us to
+*  hover on the same animation after it has been played
+*/
 @keyframes bounce-hover {
 	@include bounce-keyframes();
 }
