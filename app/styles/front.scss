@@ -66,6 +66,18 @@
 
 		color: white;
 
+		.left {
+			left: -200px;
+
+		  	-webkit-transition: left .5s 999s;
+		  	   -moz-transition: left .5s 999s;
+		  			transition: left .5s 999s;
+
+			&.slide-in {
+				left: 0px;
+			}
+		}
+
 		h1,h2,h3 {
 			text-align: center;
 		}

@@ -5,10 +5,10 @@
  * @name homepageApp.directive:scrollPosition
  * @description
  * # scrollPosition
- * Binds the a variable of how far the window has scrolled
+ * Binds the scrollPosition variable of how far the window has scrolled
  */
 angular.module('homepageApp')
-.directive('scrollPosition', ['$window', ($window) => {
+.directive('scrollPosition', ['$window', $window => {
  	return {
  		restrict: 'A',
  		scope: {
