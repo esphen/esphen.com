@@ -13,13 +13,13 @@
 	<div id="content">
 		<article>
 			<h1>Velkommen!</h1>
-			<div class="col-xs-4 left" data-ng-class="{'slide-in': fromTop >= 500 &amp;&amp; delayDone}">
-				<img src="images/tech/angular-js.png" alt="" width="150">
+			<div class="col-xs-6 left" data-ng-class="{'slide-in': fromTop >= 500 &amp;&amp; delayDone}">
+				<img class="col-xs-12" data-ng-src="{{::page.front.introduction.imgsrc}}" alt="Min favoritteditor - Sublime Text" width="700">
 			</div>
-			<div class="col-xs-8">
+			<div class="col-xs-6">
 				<h2>Some stuff about me</h2>
 				<p class="text-center">
-					{{page.front.introduction.text}}
+					{{::page.front.introduction.text}}
 				</p>
 			</div>
 		</article>

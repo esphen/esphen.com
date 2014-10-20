@@ -31,7 +31,8 @@ angular.module('homepageApp')
   		},
       front: {
         introduction: {
-          text: 'My name is Espen, and I\'m a web developer'
+          text: 'My name is Espen, and I\'m a web developer. I\'ve been doing tons of exciting projects during the last few years, most of which revolving around AngularJS, Java and jQuery. The privilige of great responsibility has given me a highly varied skillset, something which is a great asset to all my work. I love both the back- and front-end of development, but I\'ve chosen to specialize in javascript. Feel free to have a look around my site if you wish to get to know me better!',
+          imgsrc: 'images/sublime.png'
         }
       },
   		thingsIKnow: [
