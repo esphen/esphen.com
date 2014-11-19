@@ -13,13 +13,13 @@
 	</a>
 
 	<div id="content">
-		<article>
+		<article id="introduction">
 			<h1>Velkommen!</h1>
-			<div layout="row">
-				<div flex="50" class="offscreen-left" data-ng-class="{'slide-in': fromTop >= 500 &amp;&amp; delayDone}">
+			<div layout="row" layout-align="space-between">
+				<div flex="40" class="offscreen-left" data-ng-class="{'slide-in': fromTop >= 500 &amp;&amp; delayDone}">
 					<img width="700" data-ng-src="{{::page.front.introduction.imgsrc}}" alt="Min favoritteditor - Sublime Text">
 				</div>
-				<div flex="50">
+				<div flex="40">
 					<h2>Some stuff about me</h2>
 					<p class="text-center">
 						{{::page.front.introduction.text}}
@@ -31,14 +31,14 @@
 		<article id="aboutMe" class="md-whiteframe-z2">
 			<h1>Velkommen!</h1>
 			<div layout="row">
-				<div flex="50" class="offscreen-right" data-ng-class="{'slide-in': fromTop >= 1300 &amp;&amp; delayDone}">
-					<img width="700" data-ng-src="{{::page.front.introduction.imgsrc}}" alt="Min favoritteditor - Sublime Text">
-				</div>
 				<div flex="50">
 					<h2>Some stuff about me</h2>
 					<p class="text-center">
 						{{::page.front.introduction.text}}
 					</p>
+				</div>
+				<div flex="50" class="offscreen-right" data-ng-class="{'slide-in': fromTop >= 1300 &amp;&amp; delayDone}">
+					<img width="700" data-ng-src="{{::page.front.introduction.imgsrc}}" alt="Min favoritteditor - Sublime Text">
 				</div>
 			</div>
 		</article>
