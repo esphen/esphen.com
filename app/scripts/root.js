@@ -14,6 +14,7 @@ angular.module('homepageApp')
 
 	$rootScope.$on('$routeChangeSuccess', () => {
 		$rootScope.activeTab = Page.header.tabs.find(element => {
+			// This line is the bane of static code checks
 			if (~element.href.indexOf('#' + $location.path())) return element;
 		}).id;
 	});

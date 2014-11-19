@@ -56,9 +56,9 @@
 	}
 
 	#content {
-		position: absolute;
+		position: relative;
+		overflow: hidden;
 		top: 800px;
-		left: 0;
 		width: 100%;
 
 		background-color: #1d2634;
@@ -66,7 +66,8 @@
 
 		color: white;
 
-		.left {
+		.offscreen-left {
+			position: relative;
 			left: -700px;
 
 		  	-webkit-transition: left .5s;
@@ -74,12 +75,29 @@
 		  			transition: left .5s;
 
 			&.slide-in {
-				left: -100px;
+				left: 0px;
+			}
+		}
+
+		.offscreen-right {
+			position: relative;
+			right: -700px;
+
+		  	-webkit-transition: right .5s;
+		  	   -moz-transition: right .5s;
+		  			transition: right .5s;
+
+			&.slide-in {
+				right: 0px;
 			}
 		}
 
 		h1,h2,h3 {
 			text-align: center;
 		}
+	}
+
+	#aboutMe {
+		background-color: #141414;
 	}
 }

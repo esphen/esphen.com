@@ -14,11 +14,11 @@ angular.module('homepageApp')
  		scope: {
  			scroll: '=scrollPosition'
  		},
- 		link: (scope, element) => {
+ 		link: (scope) => {
  			var windowEl = angular.element($window);
 			var handler = () => {
-			  scope.scroll = windowEl.scrollTop();
-			}
+			  	scope.scroll = windowEl.scrollTop();
+			};
 			windowEl.on('scroll', scope.$apply.bind(scope, handler));
 			handler();
  		}
